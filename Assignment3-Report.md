@@ -51,3 +51,24 @@ Text…
 # 10 Comments/feedback on the lab itself
 
 Text…
+
+# X Notes
+
+DU-pair sets:
+du(1, 2, data) = {[1, 2]}
+
+du(1, 7, column) = {[1, 2, 3, 4, 5, 7]}
+
+du(3, 6, total) = {[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 7, 8, 5, 6]}
+
+du(3, 9, total) = {[1, 2, 3, 4, 5, 7, 9]}
+
+du(4, 5, rowCount) = {[4, 5]}
+
+du(5, 5, r) = {[5]}
+
+du(5, 7, r) = {[5, 7]}
+
+du(7, 7, n) = {[7]}
+
+du(7, 9, n) = {[7, 9]}
