@@ -34,11 +34,18 @@ Text…
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-Text…
+We used EclEmma as our coverage tool.
+
+| Pros |  Cons   |
+| ---- | ---- |
+| Easy to Run | Doesn't have condition coverage |
+| Easy Installation | Hard to find report details |
+|  |  |
+|  |  |
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+Requirements-based test generation allows for easier testing of scenarios that the system is supposed to be able to handle. It provides testing of the intended uses of the system. As a tradeoff, it does not allow for testing sections of the code which may not be accessed by the program during it's standard functionality. Coverage-based test generation, on the other hand, ensures that as many aspects of the code as possible is covered. As a result, there is no guaruntee that the intended functional requirements of the system will actually function. This is due to coverage-based test generation focusing on the code itself, rather than real world scenarios.
 
 # 8 A discussion on how the team work/effort was divided and managed
 
