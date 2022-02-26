@@ -22,7 +22,7 @@ Text…
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-Text…
+For writing our new unit tests, we analysed the code for each method and determined all the possible paths through it. We would then write one test at a time, and then run it to make sure it covered the desired path. This process was repeated until the method being worked on was fully covered. It would then be repeated for each method until the code was sufficiently covered by the test suite.
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
