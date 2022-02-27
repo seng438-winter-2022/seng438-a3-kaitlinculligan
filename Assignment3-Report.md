@@ -53,7 +53,7 @@ Text…
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+Installing EclEmma was somewhat difficult to install and run when using Eclipse. However, this setback was easily overcome. Some code statements located in some classes were tough to reach when making test cases because they needed us to construct mock objects to simply reach some parts of the code. 
 
 # 10 Comments/feedback on the lab itself
 
