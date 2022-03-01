@@ -17,7 +17,9 @@ for each group. Please see each lab document for details.)
 In this lab, we use white-box testing on the SUT from assignment 2. We also utilize code-coverage tools to help us understand the strength of our previously written test suite. The code-coverage tools will help us understand coverage metrics such as statement, branch, and condition coverage. In addition, we will also do maunal analysis of data-flow coverage in the system.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
-          
+          ![SENG438A3CalculateColumnTotalDataFlow drawio](https://user-images.githubusercontent.com/65249093/156266967-d6727308-f539-4154-9898-d11d72c7b668.png)
+![SENG438A3ContainsDataFlow drawio](https://user-images.githubusercontent.com/65249093/156267037-5b40ae5d-cf3d-4f7a-a5cd-4096c3481798.png)
+
 # 3 A detailed description of the testing strategy for the new unit test
 
 For writing our new unit tests, we analysed the code for each method and determined all the possible paths through it. We would then write one test at a time, and then run it to make sure it covered the desired path. This process was repeated until the method being worked on was fully covered. It would then be repeated for each method until the code was sufficiently covered by the test suite.
