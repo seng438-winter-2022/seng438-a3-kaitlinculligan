@@ -19,6 +19,8 @@ In this lab, we use white-box testing on the SUT from assignment 2. We also util
 # 2 Manual data-flow coverage calculations for X and Y methods
 The following figure illustrates a data flow diagram for the CalculateColumnTotal() method:
 ![SENG438A3CalculateColumnTotalDataFlow drawio](https://user-images.githubusercontent.com/65249093/156266967-d6727308-f539-4154-9898-d11d72c7b668.png)
+
+
 The following figure illustrates a data flow diagram for the Contains() method:
 ![SENG438A3ContainsDataFlow drawio](https://user-images.githubusercontent.com/65249093/156267037-5b40ae5d-cf3d-4f7a-a5cd-4096c3481798.png)
 
