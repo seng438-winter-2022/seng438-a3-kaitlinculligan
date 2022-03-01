@@ -18,7 +18,7 @@ In this lab, we use white-box testing on the SUT from assignment 2. We also util
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-Text…
+https://github.com/seng438-winter-2022/seng438-a3-kaitlinculligan/blob/main/SENG438A3ContainsDataFlow.drawio.png
 
 # 3 A detailed description of the testing strategy for the new unit test
 
