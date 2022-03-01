@@ -20,12 +20,13 @@ In this lab, we use white-box testing on the SUT from assignment 2. We also util
 
 
 
-            SENG438A3ContainsDataFlow.drawio.png
+
+      
           
+      
 
+  
 
-
-            SENG438A3CalculateColumnTotalDataFlow.drawio.png
           
 # 3 A detailed description of the testing strategy for the new unit test
 
