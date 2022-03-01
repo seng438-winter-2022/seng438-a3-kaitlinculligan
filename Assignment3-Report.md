@@ -81,5 +81,5 @@ du(7, 7, n) = {[7]}
 du(7, 9, n) = {[7, 9]} 
 
 DU-pair sets for contains:
-du(1, 2, value) = {1, 2}
+du(1, 2, value) = {[1, 2]}
 
