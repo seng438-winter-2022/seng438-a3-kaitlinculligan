@@ -80,6 +80,30 @@ du(7, 7, n) = {[7]}
 
 du(7, 9, n) = {[7, 9]} 
 
+/////////////////////////////////
+
+du-pair calculations:
+
+C-use: Variable data, {2, 4}
+    Variable column, {7}
+    Variable total, defined at 3, {}
+    Variable total, defined at 10, {}
+    Variable r, {7}
+    Variable rowCount, {}
+    Variable n, {10}
+    
+    dcu = 5
+    
+DPU: 
+    Variable data, {}
+    Variable column, {}
+    Variable total, {}
+    Variable r, {[5, 6],[5, 7]}
+    Variable rowCount, {[5, 6],[5, 7]}
+    Variable n, {[8, 9], [8, 10]}
+    
+    dpu = 6
+
 DU-pair sets for contains:
 du(1, 2, value) = {[1, 2]}
 
