@@ -17,12 +17,49 @@ for each group. Please see each lab document for details.)
 In this lab, we use white-box testing on the SUT from assignment 2. We also utilize code-coverage tools to help us understand the strength of our previously written test suite. The code-coverage tools will help us understand coverage metrics such as statement, branch, and condition coverage. In addition, we will also do maunal analysis of data-flow coverage in the system.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
-The following figure illustrates a data flow diagram for the CalculateColumnTotal() method:
-![SENG438A3CalculateColumnTotalDataFlow drawio](https://user-images.githubusercontent.com/65249093/156266967-d6727308-f539-4154-9898-d11d72c7b668.png)
 
+DU-pair sets for calculateColumnTotal:
+du(1, 2, data) = {[1, 2]}
 
-The following figure illustrates a data flow diagram for the Contains() method:
-![SENG438A3ContainsDataFlow drawio](https://user-images.githubusercontent.com/65249093/156267037-5b40ae5d-cf3d-4f7a-a5cd-4096c3481798.png)
+du(1, 7, column) = {[1, 2, 3, 4, 5, 7]}
+
+du(3, 6, total) = {[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 7, 8, 5, 6]}
+
+du(3, 9, total) = {[1, 2, 3, 4, 5, 7, 9]}
+
+du(4, 5, rowCount) = {[4, 5]}
+
+du(5, 5, r) = {[5]}
+
+du(5, 7, r) = {[5, 7]}
+
+du(7, 7, n) = {[7]}
+
+du(7, 9, n) = {[7, 9]} 
+
+/////////////////////////////////
+
+du-pair calculations:
+
+C-use: Variable data, {2, 4}
+    Variable column, {7}
+    Variable total, defined at 3, {}
+    Variable total, defined at 10, {}
+    Variable r, {7}
+    Variable rowCount, {}
+    Variable n, {10}
+    
+    dcu = 5
+    
+DPU: 
+    Variable data, {}
+    Variable column, {}
+    Variable total, {}
+    Variable r, {[5, 6],[5, 7]}
+    Variable rowCount, {[5, 6],[5, 7]}
+    Variable n, {[8, 9], [8, 10]}
+    
+    dpu = 6
 
 # 3 A detailed description of the testing strategy for the new unit test
 
@@ -30,7 +67,17 @@ For writing our new unit tests, we analysed the code for each method and determi
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
-Text…
+DataUtilitiesTests:
+calculateRowTotalElseCoverageTest(): Before this coverage test, we were unable to reach full branch coverage for calculateRowTotal() due to an if-else statement within this method not being covered. To cover this, we called the method by first making a mock object of Values2D with a value of null that would avoid the if(n != null) statement. Therefore, our test would cover this else statement. 
+
+cloneCoverageTestElse(): Before implementing this test, our test did not cover the else statement of clone(double[][] source). Therefore, we made an object where source[i] == null, so that the if(source[i] != null) would not be entered, and the else statement would be covered instead. 
+
+equalsCoverageTestA(): Before implementing this test, we did not cover the statement within if(a == null) in the method equals. Therefore we made a test with double[][] a = null and double[][] b == {{1,2}}. Therefore, the if(a == null) is covered. 
+
+RangeTests:
+intersectsConverageTest2(): Before implementing this test, the first if statement in intersects was not covered. Therefore, the first value in the function call of intersects(double b0, double b1) was set to 3 to make sure that b0 == this.lower. Therefore, the statement within if(b0 <= this.lower) is covered.
+
+shiftThreeParamsCoverageTest2(): Before implementing this test, there were no statements covered in the shiftWithNoZeroCrossing method. To at least cover if(val > 0) within the shift method, we called shift(exampleRange, 5, true), where exampleRange = new Range (3,5). Therefore, this test covers the statement if(value > 0.0) within shiftWithNoZeroCrossing, which increases coverage by 1 line. 
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
@@ -46,7 +93,7 @@ We used EclEmma as our coverage tool.
 | ---- | ---- |
 | Easy to Run | Doesn't have condition coverage |
 | Easy Installation | Hard to find report details |
-|  |  |
+| Has branch and statement coverage |  |
 |  |  |
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
