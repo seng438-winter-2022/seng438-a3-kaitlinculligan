@@ -17,6 +17,8 @@ for each group. Please see each lab document for details.)
 In this lab, we use white-box testing on the SUT from assignment 2. We also utilize code-coverage tools to help us understand the strength of our previously written test suite. The code-coverage tools will help us understand coverage metrics such as statement, branch, and condition coverage. In addition, we will also do maunal analysis of data-flow coverage in the system. Finally, this lab will allow us to practice creating data flow diagrams.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
+The following image illustrates a data flow diagram for the calculateColumnTotal() method:
+![SENG438A3CalculateColumnTotalDataFlow drawio](https://user-images.githubusercontent.com/65249093/156267593-b8921df2-3116-4d4e-a159-46acb9aa3297.png)
 
 DU-pair sets for calculateColumnTotal:
 du(1, 2, data) = {[1, 2]}
