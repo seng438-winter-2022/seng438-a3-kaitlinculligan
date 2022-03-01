@@ -14,7 +14,7 @@ for each group. Please see each lab document for details.)
 
 # 1 Introduction
 
-In this lab, we use white-box testing on the SUT from assignment 2. We also utilize code-coverage tools to help us understand the strength of our previously written test suite. The code-coverage tools will help us understand coverage metrics such as statement, branch, and condition coverage. In addition, we will also do maunal analysis of data-flow coverage in the system.
+In this lab, we use white-box testing on the SUT from assignment 2. We also utilize code-coverage tools to help us understand the strength of our previously written test suite. The code-coverage tools will help us understand coverage metrics such as statement, branch, and condition coverage. In addition, we will also do maunal analysis of data-flow coverage in the system. Finally, this lab will allow us to practice creating data flow diagrams.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
