@@ -50,7 +50,6 @@ C-use: Variable data, {2, 4}
     Variable r, {7}
     Variable rowCount, {}
     Variable n, {10}
-    
     dcu = 5
     
 DPU: 
@@ -60,12 +59,20 @@ DPU:
     Variable r, {[5, 6],[5, 7]}
     Variable rowCount, {[5, 6],[5, 7]}
     Variable n, {[8, 9], [8, 10]}
-    
     dpu = 6
     
 The following image represents a data flow diagram for the contains() method: 
 
 ![SENG438A3ContainsDataFlow drawio](https://user-images.githubusercontent.com/65249093/156267760-9617d59c-4f1c-4d5d-9674-de5695ad5c03.png)
+
+C-use: 
+    Variable value, {2}
+    dcu = 1
+
+DPU: 
+    Variable data, {}
+    dpu = 0
+    
 
 # 3 A detailed description of the testing strategy for the new unit test
 
@@ -74,6 +81,7 @@ For writing our new unit tests, we analysed the code for each method and determi
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 DataUtilitiesTests:
+
 calculateRowTotalElseCoverageTest(): Before this coverage test, we were unable to reach full branch coverage for calculateRowTotal() due to an if-else statement within this method not being covered. To cover this, we called the method by first making a mock object of Values2D with a value of null that would avoid the if(n != null) statement. Therefore, our test would cover this else statement. 
 
 cloneCoverageTestElse(): Before implementing this test, our test did not cover the else statement of clone(double[][] source). Therefore, we made an object where source[i] == null, so that the if(source[i] != null) would not be entered, and the else statement would be covered instead. 
@@ -81,6 +89,7 @@ cloneCoverageTestElse(): Before implementing this test, our test did not cover t
 equalsCoverageTestA(): Before implementing this test, we did not cover the statement within if(a == null) in the method equals. Therefore we made a test with double[][] a = null and double[][] b == {{1,2}}. Therefore, the if(a == null) is covered. 
 
 RangeTests:
+
 intersectsConverageTest2(): Before implementing this test, the first if statement in intersects was not covered. Therefore, the first value in the function call of intersects(double b0, double b1) was set to 3 to make sure that b0 == this.lower. Therefore, the statement within if(b0 <= this.lower) is covered.
 
 shiftThreeParamsCoverageTest2(): Before implementing this test, there were no statements covered in the shiftWithNoZeroCrossing method. To at least cover if(val > 0) within the shift method, we called shift(exampleRange, 5, true), where exampleRange = new Range (3,5). Therefore, this test covers the statement if(value > 0.0) within shiftWithNoZeroCrossing, which increases coverage by 1 line. 
