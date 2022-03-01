@@ -49,7 +49,7 @@ Requirements-based test generation allows for easier testing of scenarios that t
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Text…
+In order to complete the work, we all joined together on a call and one team member shared their screen. All together, we then went through the work together. We collectively decided what to write for our tests, and the person sharing their screen was in charge of writing down our suggesions. This method was effective for detecting typos quickly. It was also very effective, since 4 people were tackling a problem at the same time. 
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
