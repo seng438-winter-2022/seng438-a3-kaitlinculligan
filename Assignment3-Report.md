@@ -64,7 +64,7 @@ DPU:
 Test Coverage per Test:
     calcualteColumnTotalForTwoValues:
     
-    calculateNullColumn:
+   calculateNullColumn:
     
 DU-Pair Coverage:
     
@@ -83,19 +83,19 @@ DPU:
  Test Coverage per Test:
     containsTestLowerBoundary:
     
-    containsTestUpperBoundary:
+   containsTestUpperBoundary:
     
-    containsTestAboveUpperBoundary:
+   containsTestAboveUpperBoundary:
     
-    containsTestBelowLowerBoundary:
+   containsTestBelowLowerBoundary:
     
-    containsTestMiddleValue:
+   containsTestMiddleValue:
     
-    containsTestWithDouble:
+   containsTestWithDouble:
     
-    containsTestBelowLowerBoundaryWithDoubles:
-    
-    containsTestWithNull:
+   containsTestBelowLowerBoundaryWithDoubles:
+   
+   containsTestWithNull:
 
 DU-Pair Coverage:
 
