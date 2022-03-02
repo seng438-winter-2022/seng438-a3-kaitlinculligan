@@ -137,6 +137,29 @@ We used EclEmma as our coverage tool.
 | Easy to Run | Doesn't have condition coverage |
 | Easy Installation | Hard to find report details |
 | Has branch and statement coverage |  |
+
+Pros and Cons for statement coverage:
+| Pros |  Cons   |
+| ---- | ---- |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+Pros and Cons for branch coverage:
+| Pros |  Cons   |
+| ---- | ---- |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+Pros and Cons for method coverage:
+| Pros |  Cons   |
+| ---- | ---- |
+|  |  |
+|  |  |
+|  |  |
 |  |  |
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
