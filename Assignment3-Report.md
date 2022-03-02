@@ -61,6 +61,13 @@ DPU:
     Variable n, {[8, 9], [8, 10]}
     dpu = 6
     
+Test Coverage per Test:
+    calcualteColumnTotalForTwoValues:
+    
+    calculateNullColumn:
+    
+DU-Pair Coverage:
+    
 The following image represents a data flow diagram for the contains() method: 
 
 ![SENG438A3ContainsDataFlow drawio](https://user-images.githubusercontent.com/65249093/156267760-9617d59c-4f1c-4d5d-9674-de5695ad5c03.png)
@@ -73,6 +80,24 @@ DPU:
     Variable data, {}
     dpu = 0
     
+ Test Coverage per Test:
+    containsTestLowerBoundary:
+    
+    containsTestUpperBoundary:
+    
+    containsTestAboveUpperBoundary:
+    
+    containsTestBelowLowerBoundary:
+    
+    containsTestMiddleValue:
+    
+    containsTestWithDouble:
+    
+    containsTestBelowLowerBoundaryWithDoubles:
+    
+    containsTestWithNull:
+
+DU-Pair Coverage:
 
 # 3 A detailed description of the testing strategy for the new unit test
 
