@@ -61,16 +61,19 @@ DPU:
     Variable n, {[8, 9], [8, 10]}
     dpu = 6
     
-Test Coverage per Test:
-    calcualteColumnTotalForTwoValues:
+Pair Coverage per Test:
+    calcualteColumnTotalForTwoValues: du(1, 2, data), du(1, 7, column), du(3, 6, total), du(3, 9, total), du(4, 5, rowCount), du(5, 5, r), du(5, 7, r), du(7, 7, n), du(7, 9, n)
     
-   calculateNullColumn:
+   calculateNullColumn: du(1, 2, data)
     
 DU-Pair Coverage:
     
 The following image represents a data flow diagram for the contains() method: 
 
 ![SENG438A3ContainsDataFlow drawio](https://user-images.githubusercontent.com/65249093/156267760-9617d59c-4f1c-4d5d-9674-de5695ad5c03.png)
+
+DU-pair sets for contains:
+du(1, 2, value) = {[1, 2]}
 
 C-use: 
     Variable value, {2}
@@ -80,22 +83,22 @@ DPU:
     Variable data, {}
     dpu = 0
     
- Test Coverage per Test:
-    containsTestLowerBoundary:
+ Pair Coverage per Test:
+    containsTestLowerBoundary: du(1, 2, value)
     
-   containsTestUpperBoundary:
+   containsTestUpperBoundary: du(1, 2, value)
     
-   containsTestAboveUpperBoundary:
+   containsTestAboveUpperBoundary: du(1, 2, value)
     
-   containsTestBelowLowerBoundary:
+   containsTestBelowLowerBoundary: du(1, 2, value)
     
-   containsTestMiddleValue:
+   containsTestMiddleValue: du(1, 2, value)
     
-   containsTestWithDouble:
+   containsTestWithDouble: du(1, 2, value)
     
-   containsTestBelowLowerBoundaryWithDoubles:
+   containsTestBelowLowerBoundaryWithDoubles: du(1, 2, value)
    
-   containsTestWithNull:
+   containsTestWithNull: du(1, 2, value)
 
 DU-Pair Coverage:
 
