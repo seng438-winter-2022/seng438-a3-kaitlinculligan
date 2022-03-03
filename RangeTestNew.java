@@ -421,10 +421,10 @@ public class RangeTest {
     	exampleRange.equals(testRange);
     }
     
-    @Test
+   @Test
     public void isNaNRangeCoverageTest() {
-    	exampleRange = new Range (3, 5);
-    	exampleRange.isNaNRange();
+        exampleRange = new Range (3, 5);
+        assertEquals(exampleRange.isNaNRange(), false);
     }
     
     
