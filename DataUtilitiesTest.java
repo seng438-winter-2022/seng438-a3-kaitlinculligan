@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertArrayEquals;
 
 import org.jfree.data.DataUtilities;
 import org.jfree.data.Values2D;
@@ -328,7 +329,7 @@ public class DataUtilitiesTest extends DataUtilities {
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////////////
-	
+	// Coverage tests
 	@Test
 	public void calculateColumnTotalCoverageTest() {
 	    // setup
@@ -346,7 +347,9 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 	    int col = 0;
 	    
-	    DataUtilities.calculateColumnTotal(values, col);
+	    double result = DataUtilities.calculateColumnTotal(values, col);
+	    
+	    assertEquals("Result should equal 10.0", 10.0, result, .000000001d);
 	        
 	}
 
@@ -367,7 +370,8 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 	    int col = 0;
 	    
-	    DataUtilities.calculateColumnTotal(values, col);
+	    double result = DataUtilities.calculateColumnTotal(values, col);
+	    assertEquals("Result should equal 2.5", 2.5, result, .000000001d);
 	        
 	}
 	
@@ -377,18 +381,19 @@ public class DataUtilitiesTest extends DataUtilities {
 		double[][] a = null;
 		double[][] b = {{1,2}};
 			    
-	    DataUtilities.equal(a, b);
+	    boolean result = DataUtilities.equal(a, b);
+	    assertFalse("Should return false.", result);
 	        
 	}
 	
 	@Test
 	public void equalsCoverageTestB() {
 	    // setup
-		double[][] b = null;
 		double[][] a = {{1,2}};
+		double[][] b = null;
 			    
-	    DataUtilities.equal(a, b);
-	        
+	    boolean result = DataUtilities.equal(a, b);
+	    assertFalse("Should return false.", result);
 	}
 	
 	@Test
@@ -397,8 +402,8 @@ public class DataUtilitiesTest extends DataUtilities {
 		double[][] b = {{2,1}, {1,2}};
 		double[][] a = {{1,2}};
 			    
-	    DataUtilities.equal(a, b);
-	        
+	    boolean result = DataUtilities.equal(a, b);
+	    assertFalse("Should return false.", result);
 	}
 	
 	@Test
@@ -406,7 +411,8 @@ public class DataUtilitiesTest extends DataUtilities {
 	    // setup
 		double[][] a = {{1,2}};
 			    
-	    DataUtilities.clone(a);
+	    double result[][] = DataUtilities.clone(a);
+	    //assertArrayEquals("Result should equal {{1,2}}.", a, result);
 	        
 	}
 	
@@ -415,7 +421,8 @@ public class DataUtilitiesTest extends DataUtilities {
 	    // setup
 		double[][] a = {null};
 			    
-	    DataUtilities.clone(a);
+	    double result[][] = DataUtilities.clone(a);
+	    //assertEquals("Result should {null}.", a, result, );
 	        
 	}
 	
@@ -436,8 +443,9 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 	    int col = 0;
 	    int[] validRows= {0, 1};	    
-	    DataUtilities.calculateColumnTotal(values, col, validRows);
-	        
+	    double result = DataUtilities.calculateColumnTotal(values, col, validRows);
+	    
+	    assertEquals("Result should equal 2.5", 2.5, result, .000000001d);
 	}
 	
 	@Test
@@ -457,8 +465,10 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 	    int col = 0;
 	    int[] validRows= {0, 15};	    
-	    DataUtilities.calculateColumnTotal(values, col, validRows);
-	        
+	    double result = DataUtilities.calculateColumnTotal(values, col, validRows);
+	    
+	    assertEquals("Result should be 0.0", 0.0, result, .000000001d);
+	    //assertNull("Result should be null.", result);
 	}
 	
 	@Test
@@ -478,8 +488,10 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 	    int col = 0;
 	    int[] validRows= {0, 15};	    
-	    DataUtilities.calculateRowTotal(values, col);
-	        
+//	    double result = DataUtilities.calculateRowTotal(values, col);
+//	    assertEquals("Result should be 2.5.", 2.5, result, .000000001d);
+	    //assertNull("Result should be null.", result);
+
 	}
 	
 	@Test
@@ -499,7 +511,9 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 	    int col = 0;
 	    int[] validCols= {0, 15};	    
-	    DataUtilities.calculateRowTotal(values, col, validCols);
+	    double result = DataUtilities.calculateRowTotal(values, col, validCols);
+	    assertEquals("Result should be 2.5.", 2.5, result, .000000001d);
+
 	}
 	
 	@Test
@@ -519,6 +533,8 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 	    int col = 0;
 	    int[] validCols= {0, 15};	    
-	    DataUtilities.calculateRowTotal(values, col, validCols);
+	    double result = DataUtilities.calculateRowTotal(values, col, validCols);
+	    assertEquals("Result should be 4.0.", 4.0, result, .000000001d);
+
 	}
 }
