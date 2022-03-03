@@ -434,10 +434,10 @@ public class RangeTest {
     	exampleRange.hashCode();
     }
     
-    @Test
+     @Test
     public void toStringCoverageTest() {
-    	exampleRange = new Range (3, 5);
-    	exampleRange.toString();
+        exampleRange = new Range (1, 5);
+        assertEquals(examplesRange.toString(), "Range[1.0,5.0]");
     }
     
 }
