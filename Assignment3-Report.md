@@ -141,26 +141,20 @@ We used EclEmma as our coverage tool.
 Pros and Cons for statement coverage:
 | Pros |  Cons   |
 | ---- | ---- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Easy to achieve | Weak assessment for test strength |
+|  | Requires minimal analysis of code |
 
 Pros and Cons for branch coverage:
 | Pros |  Cons   |
 | ---- | ---- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Stronger indication of test strength | Harder to do |
+| Forces deeper coverage of code | More analysis is required to get good coverage |
 
 Pros and Cons for method coverage:
 | Pros |  Cons   |
 | ---- | ---- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Very easy to increase | Poor indicator of test strength |
+| Is on a per method basis | Doesn't pay attention to coverage within method |
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
