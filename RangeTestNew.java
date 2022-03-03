@@ -430,8 +430,8 @@ public class RangeTest {
     
     @Test
     public void hashCodeCoverageTest() {
-    	exampleRange = new Range (3, 5);
-    	exampleRange.hashCode();
+        exampleRange = new Range (3, 5);
+        assertEquals(-2.130968576E9, exampleRange.hashCode(), 0.01);
     }
     
      @Test
