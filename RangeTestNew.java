@@ -363,8 +363,9 @@ public class RangeTest {
     
     @Test
     public void shiftCoverageTest() {
-    	exampleRange = new Range (3, 5);
-    	Range.shift(exampleRange, 5);
+        Range range = new Range (3, 15);
+        Range range1 = new Range(8.0,20.0);
+        assertEquals(range1, Range.shift(range, 5));
     }
     
     @Test
