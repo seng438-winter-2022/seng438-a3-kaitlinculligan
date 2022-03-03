@@ -383,8 +383,9 @@ public class RangeTest {
     
     @Test
     public void scaleCoverageTest() {
-    	exampleRange = new Range (3, 5);
-    	Range.scale(exampleRange, 5);
+        exampleRange = new Range (3, 5);
+        Range exampleRange2 = new Range(15.0,25,0)
+        assertEquals(exampleRange2, Range.scale(range, 5));
     }
     
     @Test
