@@ -217,11 +217,17 @@ public class RangeTest {
     	exampleRange = new Range(3, 6);
     	exampleRange.intersects(3,7);
    }
+    @Test
+    public void intersectsCoverageTest2() {
+        Range range  = new Range(3, 6);
+        assertEquals(true, range.intersects(3,7));
+   }
     
     @Test
     public void intersectsCoverageTest2() {
     	exampleRange = new Range(3, 6);
-    	exampleRange.intersects(3,3);
+    	//exampleRange.intersects(3,3);
+        assertEquals(true, range.intersects(3,3));
     }
     
 //    @Test
