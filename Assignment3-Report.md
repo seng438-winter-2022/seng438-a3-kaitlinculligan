@@ -58,7 +58,7 @@ Variable rowCount, {}
 
 Variable n, {10}
 
-dcu = 5
+    dcu = 5
     
     
     
@@ -75,7 +75,7 @@ Variable rowCount, {[5, 6],[5, 7]}
 
 Variable n, {[8, 9], [8, 10]}
 
-dpu = 6
+    dpu = 6
     
 Pair Coverage per Test:
     calcualteColumnTotalForTwoValues: du(1, 2, data), du(1, 7, column), du(3, 6, total), du(3, 9, total), du(4, 5, rowCount), du(5, 5, r), du(5, 7, r), du(7, 7, n), du(7, 9, n)
