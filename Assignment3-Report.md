@@ -171,7 +171,7 @@ Installing EclEmma was somewhat difficult to install and run when using Eclipse.
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+This lab was a good introduction to writing automated coverage tests using EclEmma. We were able to extend our tests to cover nearly all of the statements that we were supposed to cover, which also included branches that we had missed without our coverage tests. The construction and uses of coverage testing software was relatively simple and helped us to tests almost every part of our code. As a result, we had a much more thorough tests that reach most of the code and test the functionality of most statements and branches. 
 
 # X Notes
 
