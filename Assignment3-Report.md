@@ -100,7 +100,6 @@ DPU:
    
    containsTestWithNull: du(1, 2, value)
 
-DU-Pair Coverage:
 
 # 3 A detailed description of the testing strategy for the new unit test
 
@@ -164,11 +163,11 @@ Requirements-based test generation allows for easier testing of scenarios that t
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-In order to complete the work, we all joined together on a call and one team member shared their screen. All together, we then went through the work together. We collectively decided what to write for our tests, and the person sharing their screen was in charge of writing down our suggesions. This method was effective for detecting typos quickly. It was also very effective, since 4 people were tackling a problem at the same time. 
+In order to complete the work, we all joined together on a call and one team member shared their screen. All together, we then went through the work together. We collectively decided what to write for our tests, and the person sharing their screen was in charge of writing down our suggestions. This method was effective for detecting typos quickly. It was also very effective, since 4 people were tackling a problem at the same time. New test cases for both Range.java and DataUtilities.java were all done as a group.
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Installing EclEmma was somewhat difficult to install and run when using Eclipse. However, this setback was easily overcome. Some code statements located in some classes were tough to reach when making test cases because they needed us to construct mock objects to simply reach some parts of the code. 
+Installing EclEmma was somewhat difficult to install and run when using Eclipse. However, this setback was easily overcome. Some code statements located in some classes were tough to reach when making test cases because they needed us to construct mock objects to simply reach some parts of the code. Some coverage tests were tough to make, as some methods being tested used other methods in the code.
 
 # 10 Comments/feedback on the lab itself
 
